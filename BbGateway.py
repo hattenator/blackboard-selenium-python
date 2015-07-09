@@ -12,6 +12,7 @@ import testModule
 import getpass
 import traceback
 
+DUMP_FILE='/usr/local/bbuser/archive/bbpilot_courses.csv'
 
 class TestDriver:
     def __init__(self):
@@ -40,6 +41,7 @@ class TestDriver:
         self.cookiesFailed = False
         self.taskTries=0
         self.driver.set_window_size(1400,900)
+        self.course_id_dump=DUMP_FILE
         return
 
     def saveCookies(self):

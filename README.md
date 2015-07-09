@@ -8,7 +8,9 @@ Selenium has an annoying issue that it can't connect to an existing browser.  So
 Test case names are at the bottom of testModule.py.  The server, username, and password go in a file called BbWebCredentials-${BbEnvironment}.py.  To delete /internal/courses content from Firefox, you do:
 
 $ BbEnvironment=example ./BbGateway.py
+
 Waiting for Signal
+
 Do Test? delUploads
 
 and hopefully it works for you.

@@ -435,7 +435,7 @@ def deleteCourseUploads(tester,debug=True):
             size.click()
             time.sleep(2)
 
-    irFile = open('/usr/local/bbuser/archive/bbpilot_courses.csv','r')
+    irFile = open(tester.course_id_dump,'r')
     existingCourses={}
     for row in irFile :
         c=row.lstrip().rstrip()
